@@ -1,5 +1,0 @@
-// working with  attack.php and exploit.php, the victim first click the "GO TO EXPLOIT" and must click the hyperlink named as // "Go" in the exploit.php
-<a href="http://localhost/css/attack/exploiter.php" style="text-decoration:none;"><h2 align="center">GO TO EXPLOIT</h2></a>
-
-
-
