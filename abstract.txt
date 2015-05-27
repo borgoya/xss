@@ -1,0 +1,29 @@
+Abstract
+
+Security is one of the major concern in most of the applications that run on server or personal computers. 
+Securing the applications are the key study for the security researchers to avoid security breach from the attackers. 
+Application vul¬nerabilities may be exploited by the attackers if we don’t address those properly. 
+To address such system we must understand the type of attacks and accordingly, activates its detection mechanism. 
+Web applications that run on a particular server are not considered to be threat free in current days []. 
+Among a bunch of security threats, cross-site scripting (XSS) is a kind of web application attack which may occur by 
+exploiting the vulnerabilities that exists in a web-application domain. 
+
+A typical attack scenario of XSS is, malicious script injection that executes on the victims browser or on the server.
+By executing such scripts, an attacker may perform unintended operations that may lead to security threats of the users
+or the server. The security threats includes defacing of websites, cookie stealing, cookie poisoning,
+keystroke recording, intranet hacking, history theft and may lead to phishing to grab the user credentials, making 
+fool out of the user.
+
+In this project, we have studied the various characteristics of XSS attacks and its different classes. 
+We also studied the present day practices to mitigate this attack. We finally, implement detection method based 
+on initialized black list as proposed in [].  To implement the method we develop the following modules as below:
+
+1. There are some HTML character set that can lead to serious XSS attacks. We develop a module that identifies 
+any malicious characters available in a run-time scripts and converts it to non-executable HTML character set, 
+giving no chance to the attacker to launch an attack. The module has strong black-listed character set collected 
+from various attacks and security research []. And finally we end up adding some other character sets that are 
+not malicious but may lead to serious script execution in the browser or server in the future.
+
+2. We develop a Firefox add-on which opens up secured browsing session for a particular website that ensures the 
+least possibility of phishing and cookie stealing. The add-on can be migrated to be used on any website by adding 
+trusted websites in the URL list.      
