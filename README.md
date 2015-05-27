@@ -1,2 +1,2 @@
 # xss
-XSS(Cross-Site Scripting) Attack
+XSS (Cross-Site Scripting) Attack
