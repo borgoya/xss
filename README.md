@@ -1,2 +1,2 @@
 # xss
-XSS Research
+XSS(Cross-Site Scripting) Attack
