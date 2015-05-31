@@ -48,7 +48,7 @@ function led(s,t){
 	if(slen==0) return tlen;
 	if(tlen==0) return slen;
     
-    var costs = [];
+        var costs = [];
 
 
   	for(i=0;i<=slen;i++){
