@@ -37,7 +37,7 @@ var temp = Math.min.apply(Math,dist);
 function led(s,t){
 	
 	s = s.toLowerCase();
-    t = t.toLowerCase();
+    	t = t.toLowerCase();
 	
 	// source and target string length
 	var slen = s.length;
